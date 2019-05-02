@@ -1,0 +1,274 @@
+Pechuga_Pollo 0 C
+
+-PechugaPollo 500 g
+-Oregano
+-Complemento
+
+"Hacer Pollo a la plancha con sal, pimienta y oregano. Como complemento una ensalada/arroz/papas"
+
+
+
+Solomillo_Res 0 C
+
+-SolomilloRes 500 g
+-Complemento
+
+""
+
+
+
+Solomillo_Cerdo 0 C
+
+-SolomilloCerdo 500 g
+-Complemento
+
+""
+
+
+
+Ensalada_Full_Carne 0 C
+
+-Lechuga
+-Tomate
+-Millo
+-Aguacate
+-Pollo
+-Complemento
+
+""
+
+
+
+Hamburguesa 0 C
+
+-CarneMolida 500 g
+-Huevos 2 u
+-Ajo 2 u
+-Cebolla 1 u
+-(Zanahoria)
+-Pimienta
+-Pan
+-Complemento
+
+""
+
+
+
+Lentejas 0 L
+
+-BoteLentejas
+
+""
+
+
+
+Garbanzos_Mama_Ricky 0 L
+
+-Garbanzos
+-Papas
+-Zanahorias
+-Pimenton
+-Cebolla
+-Chistorra
+
+""
+
+
+
+Pescado_Guisado 0 P
+
+-BolsaPescado
+-Cebolla 1 u
+-Vinagre
+-Laurel
+-Ajo
+-Papas
+-Complemento
+
+"Las cebollas en aros"
+
+
+
+Pescado_Frito 0 P
+
+-BolsaPescado
+-Pimienta
+-Sal
+-Complemento
+
+""
+
+
+
+Calamares_asados 0 P
+
+-Calamares
+-Complemento
+
+""
+
+
+
+Ensalada_Full_Pescado 0 P
+
+-Lechuga
+-Tomate
+-Millo
+-Aguacate
+-Atun
+
+""
+
+
+
+Pimiento_Maravilloso 1 C
+
+-Pimiento 4 u
+-CarneMolida 500 g
+-TomateFrito 500 ml
+-Vinagre
+-(Vino)
+-Laurel 2 u
+-Oregano
+-Pimienta
+-Cebolla 1 u
+-Ajo 1 u
+-Queso
+
+"Hacer salsa bolognesa. Precalentar pimientos mientras se hace la salsa. Hacer relleno y poner el queso. Terminar con gratinado"
+
+
+
+Tortilla_Espa�ita 1 C
+
+-Huevo 2 u
+-Papas 166 g
+-Aceite
+-Cebolla 1 u
+-Sal
+
+"Pelamos las patatas, las lavamos para quitar restos de suciedad y muy importante, las secamos.
+Cortamos en l�minas semifinas, a m� no me gusta que se deshagan sino que al fre�rlas se tuesten un poco. Las colocamos en un bol grande, donde luego vamos a mezclar con el huevo y a�adimos sal al gusto. Removemos bien y reservamos.
+Elegimos nuestra sart�n m�s grande y antiadherente. La ponemos al fuego y a�adimos un buen aceite de oliva virgen extra.
+No teng�is miedo en gastaros un poco de dinero en aceite, le va a dar ese punto de sabor que distingue vuestra tortilla de las dem�s, pod�is emplear muchas variedades: arbequina, picual, cornicabra, hojiblanca, royal� el que m�s os guste, pero de calidad.
+Introducimos las patatas cortadas y ya saladas y dejamos que se cocinen durante aproximadamente veinte minutos a fuego bajo.
+El tema del grosor de las patatas tambi�n va a gustos. Hay quien prefiere cortarlas a trozos muy peque�os, en l�minas muy finas que casi se rompan al fre�r y o m�s bien grandes.
+Mientras se est�n friendo las patatas, en el bol donde luego vamos a echar las patatas batimos los huevos, reservamos.
+Pelamos la cebolla y cortamos lo m�s fino posible.
+En otra sart�n calentamos aceite de oliva y a�adimos los trozos de cebolla.
+Pochamos hasta que tenga un color dorado, que tenga un punto de caramelizaci�n pero sin llegar a quemarse. La cebolla se har� antes que las patatas, as� que escurrimos y a�adimos al bol con el huevo batido."
+
+
+
+Hamburguesa_Hidratos 1 C
+
+-CarneMolida 500 g
+-Huevos 2 u
+-Ajo 2 u
+-Cebolla 1 u
+-(Zanahoria)
+-Pimienta
+-Pan
+-Complemento
+
+""
+
+
+
+Albondigas_Hidratos 1 C
+
+-CarneMolida 500 g
+-Huevos 2 u
+-Ajo 2 u
+-Cebolla 1 u
+-(Zanahoria)
+-Pimienta
+-Pan
+-Complemento
+
+""
+
+
+
+Cocido_Madrile�o 1 C
+
+-LataCocido 1 u
+
+""
+
+
+
+Pizza 2 C
+
+-Harina 1000 g
+-Agua 560 ml
+-Sal 25 g
+-Aceite 25 ml
+-Levadura 14 g
+-TomateFrito
+-Oregano
+-Queso
+
+"En un bol grande introducimos parte de la harina de fuerza de trigo. Dejamos unas 4 cucharadas de harina separadas para ir engordando la masa.
+Con una cuchara hacemos un hoyo en el centro del bol y echamos la levadura disuelta en el agua.
+Batimos con una cuchara de madera desde el centro hacia afuera y vamos poco a poco mezclando con la harina.
+A�adimos el aceite de oliva virgen extra y la sal. Es importante que la sal y la levadura no entren en contacto directo para no tener problemas en el proceso de fermentaci�n.
+Seguimos removiendo lo que empieza a ser la masa, por ahora ser� una mezcla pegajosa pero firme.
+Preparamos la zona donde vamos a amasar, por ejemplo la encimera de la cocina es perfecta."
+
+
+
+Spaguettis_Oleo 2 C
+
+-Spaguettis 500 g
+-Ajo 2 u
+
+
+""
+
+
+
+Spaguettis_Bolognesa 2 C
+
+-Spaguettis 500 g
+-CarneMolida 500 g
+-TomateFrito 500 ml
+-Vinagre
+-(Vino)
+-Laurel 2 u
+-Oregano
+-Pimienta
+-Cebolla 1 u
+-Ajo 1 u
+
+""
+
+
+
+Macarrones_Jamon 2 C
+
+-Macarrones
+-JamonCocido
+-Cebolla 1 u
+-Ajo 1 u
+
+""
+
+
+
+Hamburguesa_Full 2 C
+
+-CarneMolida 500 g
+-Huevos 2 u
+-Ajo 2 u
+-Cebolla 1 u
+-(Zanahoria)
+-Pimienta
+-PanRallado
+-PanHamburguesa
+-Lechuga
+-Tomate
+-(Zanahoria)
+-(Huevo)
+
+""

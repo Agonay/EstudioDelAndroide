@@ -1,0 +1,11 @@
+/home/drathijin/Proyectos/BORRAME/bin/Debug/netcoreapp2.2/BORRAME.deps.json
+/home/drathijin/Proyectos/BORRAME/bin/Debug/netcoreapp2.2/BORRAME.runtimeconfig.json
+/home/drathijin/Proyectos/BORRAME/bin/Debug/netcoreapp2.2/BORRAME.runtimeconfig.dev.json
+/home/drathijin/Proyectos/BORRAME/bin/Debug/netcoreapp2.2/BORRAME.dll
+/home/drathijin/Proyectos/BORRAME/bin/Debug/netcoreapp2.2/BORRAME.pdb
+/home/drathijin/Proyectos/BORRAME/obj/Debug/netcoreapp2.2/BORRAME.csprojAssemblyReference.cache
+/home/drathijin/Proyectos/BORRAME/obj/Debug/netcoreapp2.2/BORRAME.csproj.CoreCompileInputs.cache
+/home/drathijin/Proyectos/BORRAME/obj/Debug/netcoreapp2.2/BORRAME.AssemblyInfoInputs.cache
+/home/drathijin/Proyectos/BORRAME/obj/Debug/netcoreapp2.2/BORRAME.AssemblyInfo.cs
+/home/drathijin/Proyectos/BORRAME/obj/Debug/netcoreapp2.2/BORRAME.dll
+/home/drathijin/Proyectos/BORRAME/obj/Debug/netcoreapp2.2/BORRAME.pdb

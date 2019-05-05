@@ -692,9 +692,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/drathijin/Proyectos/HALFONSO/halfonso/Recetas/BORRAME.csproj",
-      "projectName": "BORRAME",
-      "projectPath": "/home/drathijin/Proyectos/HALFONSO/halfonso/Recetas/BORRAME.csproj",
+      "projectUniqueName": "/home/drathijin/Proyectos/HALFONSO/halfonso/Recetas/Comida.csproj",
+      "projectName": "Comida",
+      "projectPath": "/home/drathijin/Proyectos/HALFONSO/halfonso/Recetas/Comida.csproj",
       "packagesPath": "/home/drathijin/.nuget/packages/",
       "outputPath": "/home/drathijin/Proyectos/HALFONSO/halfonso/Recetas/obj/",
       "projectStyle": "PackageReference",

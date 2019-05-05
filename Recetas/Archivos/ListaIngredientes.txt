@@ -1,32 +1,36 @@
 Ingredientes:
 
  Principales:
-	 -Harina - 1000 G
-	 -Agua - 560 ML
-	 -Aceite - 51 ML
-	 -Queso - 3 
+	 -CarneMolida - 4000 G
+	 -Huevo - 14 U
+	 -PanRallado - 1 
+	 -PanHamburguesa - 1 
+	 -Tomate - 4 
 	 -Pimiento - 4 U
-	 -CarneMolida - 3500 G
 	 -TomateTriturado - 1000 ML
-	 -Huevo - 13 U
-	 -Papa - 166 G
-	 -Calamares - 1 
-	 -Complemento - 12 
-	 -BoteLenteja - 1 
+	 -Queso - 2 
+	 -LataCocido - 1 U
+	 -BolsaPescado - 1 
+	 -Complemento - 3 
+	 -Garbanzo - 1 
+	 -Papa - 168 
+	 -Pimenton - 1 
+	 -Chistorra - 1 
+	 -Aguacate - 2 
+	 -Pollo - 1 
 	 -Pan - 3 
-	 -PechugaPollo - 500 G
 
  Opcionales:
+	 -Zanahoria - 9 
 	 -Vino - 2 
-	 -Zanahoria - 6 
 
  Especias:
-	 -Sal - 26 G
-	 -Levadura - 14 G
-	 -TomateFrito - 1 
-	 -Oregano - 6 
+	 -Ajo - 17 U
+	 -Cebolla - 13 U
+	 -Pimienta - 12 
+	 -Lechuga - 4 
 	 -Vinagre - 1 
 	 -Laurel - 2 U
-	 -Pimienta - 9 
-	 -Cebolla - 12 U
-	 -Ajo - 15 U
+	 -Oregano - 1 
+	 -Sal - 29 
+	 -Millo - 2 

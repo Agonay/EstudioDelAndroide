@@ -1,0 +1,11 @@
+/home/drathijin/Proyectos/HALFONSO/halfonso/Recetas/bin/Debug/netcoreapp2.2/Comida.deps.json
+/home/drathijin/Proyectos/HALFONSO/halfonso/Recetas/bin/Debug/netcoreapp2.2/Comida.runtimeconfig.json
+/home/drathijin/Proyectos/HALFONSO/halfonso/Recetas/bin/Debug/netcoreapp2.2/Comida.runtimeconfig.dev.json
+/home/drathijin/Proyectos/HALFONSO/halfonso/Recetas/bin/Debug/netcoreapp2.2/Comida.dll
+/home/drathijin/Proyectos/HALFONSO/halfonso/Recetas/bin/Debug/netcoreapp2.2/Comida.pdb
+/home/drathijin/Proyectos/HALFONSO/halfonso/Recetas/obj/Debug/netcoreapp2.2/Comida.csprojAssemblyReference.cache
+/home/drathijin/Proyectos/HALFONSO/halfonso/Recetas/obj/Debug/netcoreapp2.2/Comida.csproj.CoreCompileInputs.cache
+/home/drathijin/Proyectos/HALFONSO/halfonso/Recetas/obj/Debug/netcoreapp2.2/Comida.AssemblyInfoInputs.cache
+/home/drathijin/Proyectos/HALFONSO/halfonso/Recetas/obj/Debug/netcoreapp2.2/Comida.AssemblyInfo.cs
+/home/drathijin/Proyectos/HALFONSO/halfonso/Recetas/obj/Debug/netcoreapp2.2/Comida.dll
+/home/drathijin/Proyectos/HALFONSO/halfonso/Recetas/obj/Debug/netcoreapp2.2/Comida.pdb

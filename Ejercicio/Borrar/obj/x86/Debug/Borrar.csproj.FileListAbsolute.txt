@@ -1,0 +1,6 @@
+/home/drathijin/Proyectos/HALFONSO/halfonso/Ejercicio/Borrar/bin/Debug/Borrar.exe
+/home/drathijin/Proyectos/HALFONSO/halfonso/Ejercicio/Borrar/bin/Debug/Borrar.pdb
+/home/drathijin/Proyectos/HALFONSO/halfonso/Ejercicio/Borrar/obj/x86/Debug/Borrar.csprojAssemblyReference.cache
+/home/drathijin/Proyectos/HALFONSO/halfonso/Ejercicio/Borrar/obj/x86/Debug/Borrar.csproj.CoreCompileInputs.cache
+/home/drathijin/Proyectos/HALFONSO/halfonso/Ejercicio/Borrar/obj/x86/Debug/Borrar.exe
+/home/drathijin/Proyectos/HALFONSO/halfonso/Ejercicio/Borrar/obj/x86/Debug/Borrar.pdb

@@ -31,7 +31,7 @@ Música:
 - Loop de musica triste.
 
 
-sistema de archivos:
+Sistema de archivos:
 - Nube 
 
 

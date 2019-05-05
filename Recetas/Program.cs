@@ -1,24 +1,31 @@
-﻿using System;
-using System.Net.Mail;
+﻿using System.Net.Mail;
 using System.Net;
 using System.IO;
+using System.Linq;
+using Recetas;
 
-namespace BORRAME
+namespace HalfonsoComida
 {
     class Program
     {
-
         static void Main(string[] args)
         {
-            string dir = "./recetasalpha.txt";
-            string dirRes = "./Archivos/ListaSemanal.pdf";
-            Lista listaEntera = CreaLista(dir);
+            string dirAlpha = "./recetasalpha.txt";
+            string dirRec = "./Archivos/ListaSemanal.txt";
+            string dirIng = "./Archivos/ListaIngredientes.txt";
+            Lista listaEntera = CreaLista(dirAlpha);
             Lista listaSemana = new Lista();
 
-            EscLista(ref listaSemana, listaEntera);
-            GuardaLista(dirRes, listaSemana);
-            
-            Attachment at = new Attachment(dirRes);
+            EscogeLista(ref listaSemana, listaEntera);
+            GuardaListaSemanal(dirRec, listaSemana);
+            GuardaListaIngredientes(dirIng, listaSemana);
+            //EnviaCorreo("./Archivos");
+        }
+
+        private static void EnviaCorreo(string dirRes)
+        {
+            Attachment at = new Attachment(dirRes+"/ListaSemanal.txt");
+            Attachment at2 = new Attachment(dirRes+"/ListaIngredientes.txt");
 
             var fromAddress = new MailAddress("servidorhuebos@gmail.com", "Halfonso");
             var dirAgo = new MailAddress("agrosocas@gmail.com", "Ago");
@@ -40,24 +47,24 @@ namespace BORRAME
             var message = new MailMessage(fromAddress, dirAgo)
             {
                 Subject = subject,
-                Body = body,                
+                Body = body,
             };
             var message2 = new MailMessage(fromAddress, dirRicky)
             {
                 Subject = subject,
-                Body = body,                
+                Body = body,
             };
             message.Attachments.Add(at);
+            message.Attachments.Add(at2);
             message2.Attachments.Add(at);
+            message2.Attachments.Add(at2);
             smtp.Send(message);
             smtp.Send(message2);
-            
-        }   
-
+        }
 
         static Lista CreaLista(string dir)
         {
-            StreamReader reader = new StreamReader(dir);
+            StreamReader reader = new StreamReader(dir, System.Text.Encoding.UTF8);
             Lista lista = new Lista();
             while (!reader.EndOfStream)
             {
@@ -66,29 +73,69 @@ namespace BORRAME
             reader.Close();
             return lista;
         }
-        static void GuardaLista(string dir, Lista l)
+        static private string CorregirNombre(string n)
+        {
+            string res = "";
+            char sum;
+            foreach (char c in n)
+            {
+                if(c=='_') sum = ' ';
+                else sum = c;
+                res+= sum;
+            }
+            return res;
+        }
+        static void GuardaListaSemanal(string dir, Lista l)
         {
             StreamWriter escritura = new StreamWriter(dir);
             
-            escritura.WriteLine("Recetas Guapas de la Semana -" +System.DateTime.Now.ToString("M/d/yyyy") + ": \n\n");
-            for(int i = 0; i<l.index;i++)
+            escritura.WriteLine("Recetas Guapas de la Semana - " +System.DateTime.Now.ToString("M/d/yyyy") + ": \n\n");
+            foreach(Receta r in l.recetas)
             {
-                escritura.WriteLine(l.recetas[i].Nombre + l.recetas[i].Categoria + " " + l.recetas[i].frec + "\n");
+                if(r !=null)
+                {
+                    escritura.WriteLine(CorregirNombre(r.Nombre.Normalize())+ " " + r.Categoria + " " + r.frec);
+                }
             }
+
             escritura.Close();
         }
-        
-        static void EscLista(ref Lista nueva, Lista l)
+
+        static void GuardaListaIngredientes(string dir, Lista l)
         {
-            Console.WriteLine("EstoyEnEscLista");
-            nueva.AddReceta(l.BuscaReceta(2));
-            nueva.AddReceta(l.BuscaReceta(1));
-            nueva.AddReceta(l.BuscaReceta(1));
-            nueva.AddReceta(l.BuscaReceta(0, "P"));
-            nueva.AddReceta(l.BuscaReceta(0, "L"));
-            nueva.AddReceta(l.BuscaReceta(0, "C"));
-            nueva.AddReceta(l.BuscaReceta(0, "C"));
-                        
+            StreamWriter write = new StreamWriter(dir);
+
+            write.WriteLine("Ingredientes:");
+            write.WriteLine("\n Principales:");
+
+            foreach (var i in from Ingrediente i in l.listaIngredientes where i != null && i.tipo ==Ingrediente.tipoI.principal select i)
+            {
+                write.WriteLine("\t {0} - {1} {2}", i.nombre, i.cantidad, i.medida.ToUpper());
+            }
+            write.WriteLine("\n Opcionales:");
+
+            foreach (var i in from Ingrediente i in l.listaIngredientes where i != null && i.tipo ==Ingrediente.tipoI.opcional select i)
+            {
+                write.WriteLine("\t {0} - {1} {2}", i.nombre, i.cantidad, i.medida.ToUpper());
+            }
+            write.WriteLine("\n Especias:");
+
+            foreach (var i in from Ingrediente i in l.listaIngredientes where i != null && i.tipo ==Ingrediente.tipoI.especia select i)
+            {
+                write.WriteLine("\t {0} - {1} {2}", i.nombre, i.cantidad, i.medida.ToUpper());
+            }
+        write.Close();
+        }
+        
+        static void EscogeLista(ref Lista nueva, Lista l)
+        {
+            nueva.AddReceta(l.BuscaReceta(2, nueva));
+            nueva.AddReceta(l.BuscaReceta(1, nueva));
+            nueva.AddReceta(l.BuscaReceta(1, nueva));
+            nueva.AddReceta(l.BuscaReceta(0, "P", nueva));
+            nueva.AddReceta(l.BuscaReceta(0, "L", nueva));
+            nueva.AddReceta(l.BuscaReceta(0, "C", nueva));
+            nueva.AddReceta(l.BuscaReceta(0, "C", nueva));
         }
 
 
@@ -97,7 +144,7 @@ namespace BORRAME
             string nombre;
             string proceso;
             Ingrediente[] ingredientes;
-            string cat;
+            string unidad;
             int frec;
 
             string[] linea;
@@ -107,25 +154,44 @@ namespace BORRAME
             } while(linea[0] == "");
             nombre = linea[0];
             frec = int.Parse(linea[1]);
-            cat = linea[2].ToUpper();
+            unidad = linea[2].ToUpper();
 
             reader.ReadLine();
             ingredientes = LeeIngredientes(ref reader);
             proceso = LeeProceso(ref reader);
 
-            Receta receta = new Receta(nombre, cat, frec);
-
+            Receta receta = new Receta(nombre, ingredientes, unidad, frec);
             return receta;
         }
         static Ingrediente[] LeeIngredientes(ref StreamReader reader)
         {
-            string[] lineaS = reader.ReadLine().Split(' ');
-            Ingrediente[] ingredientes = new Ingrediente[300];
             int i = 0;
+            string[] lineaS = reader.ReadLine().Split(' ');
+            Ingrediente[] ingredientes = new Ingrediente[1];
+
             while (lineaS[0] != "" && lineaS[0][0] == '-')
             {
-                if (lineaS.Length > 1) ingredientes[i] = new Ingrediente(lineaS[0], int.Parse(lineaS[1]), (lineaS[2]));
-                else ingredientes[i] = new Ingrediente(lineaS[0]);
+                //hace más grande el vector si es necesario --- podemos acceder a ingredientes.Length con la medida exacta
+                if(i >= ingredientes.Length)
+                {
+                    /*Ingrediente[] aux = new Ingrediente[i+1];
+                    for(int j = 0; j<ingredientes.Length;j++) aux[j] = ingredientes[j];
+                    ingredientes = aux;*/
+                    System.Array.Resize(ref ingredientes, i+1);
+                }
+                
+                if (lineaS.Length > 2)
+                {
+                    if(lineaS.Length == 3) ingredientes[i] = new Ingrediente(lineaS[0], int.Parse(lineaS[1]), (lineaS[2]));
+                    else ingredientes[i] = new Ingrediente(lineaS[0], int.Parse(lineaS[1]), lineaS[2], lineaS[3]);
+                }
+                else if (lineaS.Length == 2)
+                {
+                    ingredientes[i] = new Ingrediente(lineaS[0], lineaS[1]);
+                }
+                else 
+                    ingredientes[i] = new Ingrediente(lineaS[0]);
+
                 lineaS = reader.ReadLine().Split(' ');
                 i++;
             }
@@ -150,113 +216,5 @@ namespace BORRAME
 
 
     }
-    class Ingrediente
-    {
-        public string nombre;
-        public int cantidad;
-        public string medida;
-
-        public Ingrediente(string _n, int _c, string _m)
-        {
-            nombre = _n;
-            cantidad = _c;
-            medida = _m;
-        }
-
-        public Ingrediente(string _n)
-        {
-            nombre = _n;
-        }
-
-    }
-
-    class Receta
-    {
-        public string Nombre;
-        public Ingrediente[] ingredientes;
-        public string Proceso;
-        public string Categoria;
-        public int frec;
-
-        public Receta(string _nombre, Ingrediente[] _ingredientes, string _proceso, string unidad, int _frec)
-        {
-            Nombre = _nombre;
-            ingredientes = _ingredientes;
-            Proceso = _proceso;
-            Categoria = unidad;
-            frec = _frec;
-        }
-        public Receta(string _nombre, Ingrediente[] _ingredientes, string unidad, int _frec)
-        {
-            Nombre = _nombre;
-            ingredientes = _ingredientes;
-            Categoria = unidad;
-            frec = _frec;
-        }
-        public Receta(string _nombre, string unidad, int _frec)
-        {
-            Nombre = _nombre;
-            Categoria = unidad;
-            frec = _frec;
-        }
-    }
-    class Lista
-    {
-        public Receta[] recetas;
-        public Ingrediente[] listaIngredientes;
-        public int index;
-        public int cuentaIngredientes;
-
-        public Lista()
-        {
-            recetas = new Receta[64];
-            listaIngredientes = new Ingrediente[100];
-            index = 0;
-            cuentaIngredientes = 0;
-
-        }
-        public Receta BuscaReceta(int i)
-        {
-            Random rnd = new Random();
-            int r = rnd.Next(0, index);
-            while(recetas[r].frec != i)          
-            {
-                r = rnd.Next(0, index);
-            }
-            return recetas[r];
-        }
-        public Receta BuscaReceta(int i, string c)
-        {
-            bool enc = false;
-            Random rnd = new Random();
-            int r = rnd.Next(0, index);
-            while(!enc)            
-            {
-                if(recetas[r].frec == i && recetas[r].Categoria == c.ToUpper()) enc = true;
-                else r = rnd.Next(0, index);
-            }
-            return recetas[r];
-        }
-        public void AddReceta(Receta r)
-        {
-            recetas[index] = r;
-            Console.WriteLine(r.Nombre + " " + r.Categoria + " " + r.frec);
-
-            index++;
-            //AddIngredientes(r);
-        }
-        public void AddIngredientes(Receta r)
-        {
-            for (int i = 0; i<r.ingredientes.Length; i++)
-            {
-                listaIngredientes[cuentaIngredientes] = r.ingredientes[i];
-                cuentaIngredientes++;
-            }
-        }
-
-
-    }
-
-
 }
 

@@ -1,17 +1,17 @@
 Pechuga_Pollo 0 C
 
--PechugaPollo 500 g
--Oregano
--Complemento
+-PechugaPollo 500 g 1 
+-Oregano 
+-Complemento 1
 
-"Hacer Pollo a la plancha con sal, pimienta y oregano. Como complemento una ensalada/arroz/papas"
+"Hacer Pollo a la plancha con sal, pimienta y Oregano. Como complemento una ensalada/arroz/papas"
 
 
 
 Solomillo_Res 0 C
 
--SolomilloRes 500 g
--Complemento
+-SolomilloRes 500 g 1
+-Complemento 1
 
 ""
 
@@ -19,8 +19,8 @@ Solomillo_Res 0 C
 
 Solomillo_Cerdo 0 C
 
--SolomilloCerdo 500 g
--Complemento
+-SolomilloCerdo 500 g 1
+-Complemento 1
 
 ""
 
@@ -28,12 +28,12 @@ Solomillo_Cerdo 0 C
 
 Ensalada_Full_Carne 0 C
 
--Lechuga
--Tomate
--Millo
--Aguacate
--Pollo
--Complemento
+-Lechuga 1
+-Tomate 1
+-Millo 
+-Aguacate 1
+-Pollo 1
+-Complemento 1
 
 ""
 
@@ -41,14 +41,14 @@ Ensalada_Full_Carne 0 C
 
 Hamburguesa 0 C
 
--CarneMolida 500 g
--Huevos 2 u
--Ajo 2 u
--Cebolla 1 u
--(Zanahoria)
--Pimienta
--Pan
--Complemento
+-CarneMolida 500 g 1
+-Huevos 2 u 1
+-Ajo 2 u 1
+-Cebolla 1 u 1
+-(Zanahoria) 2
+-Pimienta 1
+-Pan 1
+-Complemento 1
 
 ""
 
@@ -56,7 +56,7 @@ Hamburguesa 0 C
 
 Lentejas 0 L
 
--BoteLentejas
+-BoteLentejas 1
 
 ""
 
@@ -64,12 +64,14 @@ Lentejas 0 L
 
 Garbanzos_Mama_Ricky 0 L
 
--Garbanzos
--Papas
+-Garbanzos 1
+-Papas 1
 -Zanahorias
--Pimenton
--Cebolla
--Chistorra
+-Pimenton 1
+-Cebolla 1 
+-Chistorra 1
+-Sal
+-Pimienta
 
 ""
 
@@ -77,13 +79,13 @@ Garbanzos_Mama_Ricky 0 L
 
 Pescado_Guisado 0 P
 
--BolsaPescado
--Cebolla 1 u
+-BolsaPescado 1
+-Cebolla 1 u 1
 -Vinagre
 -Laurel
 -Ajo
--Papas
--Complemento
+-Papas 1
+-Complemento 1
 
 "Las cebollas en aros"
 
@@ -91,10 +93,10 @@ Pescado_Guisado 0 P
 
 Pescado_Frito 0 P
 
--BolsaPescado
+-BolsaPescado 1
 -Pimienta
 -Sal
--Complemento
+-Complemento 1
 
 ""
 
@@ -102,8 +104,8 @@ Pescado_Frito 0 P
 
 Calamares_asados 0 P
 
--Calamares
--Complemento
+-Calamares 1
+-Complemento 1
 
 ""
 
@@ -115,7 +117,7 @@ Ensalada_Full_Pescado 0 P
 -Tomate
 -Millo
 -Aguacate
--Atun
+-Atun 1
 
 ""
 
@@ -123,28 +125,28 @@ Ensalada_Full_Pescado 0 P
 
 Pimiento_Maravilloso 1 C
 
--Pimiento 4 u
--CarneMolida 500 g
--TomateFrito 500 ml
+-Pimiento 4 u 1
+-CarneMolida 500 g 1
+-TomateTriturado 500 ml 1
 -Vinagre
--(Vino)
+-(Vino) 2
 -Laurel 2 u
 -Oregano
 -Pimienta
--Cebolla 1 u
+-Cebolla 1 u 
 -Ajo 1 u
--Queso
+-Queso 1
 
 "Hacer salsa bolognesa. Precalentar pimientos mientras se hace la salsa. Hacer relleno y poner el queso. Terminar con gratinado"
 
 
 
-Tortilla_Espa�ita 1 C
+Tortilla_Españita 1 C
 
--Huevo 2 u
--Papas 166 g
+-Huevo 2 u 1
+-Papas 166 g 1
 -Aceite
--Cebolla 1 u
+-Cebolla 1 u 1
 -Sal
 
 "Pelamos las patatas, las lavamos para quitar restos de suciedad y muy importante, las secamos.
@@ -162,14 +164,14 @@ Pochamos hasta que tenga un color dorado, que tenga un punto de caramelizaci�n
 
 Hamburguesa_Hidratos 1 C
 
--CarneMolida 500 g
--Huevos 2 u
--Ajo 2 u
+-CarneMolida 500 g 1
+-Huevos 2 u 1
+-Ajo 2 u 
 -Cebolla 1 u
--(Zanahoria)
+-(Zanahoria) 2
 -Pimienta
 -Pan
--Complemento
+-Complemento 1
 
 ""
 
@@ -177,22 +179,22 @@ Hamburguesa_Hidratos 1 C
 
 Albondigas_Hidratos 1 C
 
--CarneMolida 500 g
--Huevos 2 u
+-CarneMolida 500 g 1
+-Huevos 2 u 1
 -Ajo 2 u
 -Cebolla 1 u
--(Zanahoria)
+-(Zanahoria) 2
 -Pimienta
 -Pan
--Complemento
+-Complemento 1
 
 ""
 
 
 
-Cocido_Madrile�o 1 C
+Cocido_Madrileño 1 C
 
--LataCocido 1 u
+-LataCocido 1 u 1
 
 ""
 
@@ -200,14 +202,14 @@ Cocido_Madrile�o 1 C
 
 Pizza 2 C
 
--Harina 1000 g
--Agua 560 ml
--Sal 25 g
--Aceite 25 ml
+-Harina 1000 g 1
+-Agua 560 ml 1
+-Sal 25 g 
+-Aceite 25 ml 1
 -Levadura 14 g
 -TomateFrito
 -Oregano
--Queso
+-Queso 1
 
 "En un bol grande introducimos parte de la harina de fuerza de trigo. Dejamos unas 4 cucharadas de harina separadas para ir engordando la masa.
 Con una cuchara hacemos un hoyo en el centro del bol y echamos la levadura disuelta en el agua.
@@ -220,7 +222,7 @@ Preparamos la zona donde vamos a amasar, por ejemplo la encimera de la cocina es
 
 Spaguettis_Oleo 2 C
 
--Spaguettis 500 g
+-Spaguettis 500 g 1
 -Ajo 2 u
 
 
@@ -230,11 +232,11 @@ Spaguettis_Oleo 2 C
 
 Spaguettis_Bolognesa 2 C
 
--Spaguettis 500 g
--CarneMolida 500 g
--TomateFrito 500 ml
+-Spaguettis 500 g 1
+-CarneMolida 500 g 1
+-TomateTriturado 500 ml 1
 -Vinagre
--(Vino)
+-(Vino) 2
 -Laurel 2 u
 -Oregano
 -Pimienta
@@ -247,9 +249,9 @@ Spaguettis_Bolognesa 2 C
 
 Macarrones_Jamon 2 C
 
--Macarrones
--JamonCocido
--Cebolla 1 u
+-Macarrones 1
+-JamonCocido 1
+-Cebolla 1 u 1
 -Ajo 1 u
 
 ""
@@ -258,17 +260,17 @@ Macarrones_Jamon 2 C
 
 Hamburguesa_Full 2 C
 
--CarneMolida 500 g
--Huevos 2 u
+-CarneMolida 500 g 1
+-Huevos 2 u 1
 -Ajo 2 u
 -Cebolla 1 u
--(Zanahoria)
+-(Zanahoria) 2
 -Pimienta
--PanRallado
--PanHamburguesa
+-PanRallado 1
+-PanHamburguesa 1
 -Lechuga
--Tomate
--(Zanahoria)
--(Huevo)
+-Tomate 1
+-(Zanahoria) 2
+-(Huevo) 2
 
 ""

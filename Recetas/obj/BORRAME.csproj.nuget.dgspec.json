@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/drathijin/Proyectos/BORRAME/BORRAME.csproj": {}
+    "/home/drathijin/Proyectos/HALFONSO/halfonso/Recetas/BORRAME.csproj": {}
   },
   "projects": {
-    "/home/drathijin/Proyectos/BORRAME/BORRAME.csproj": {
+    "/home/drathijin/Proyectos/HALFONSO/halfonso/Recetas/BORRAME.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/drathijin/Proyectos/BORRAME/BORRAME.csproj",
+        "projectUniqueName": "/home/drathijin/Proyectos/HALFONSO/halfonso/Recetas/BORRAME.csproj",
         "projectName": "BORRAME",
-        "projectPath": "/home/drathijin/Proyectos/BORRAME/BORRAME.csproj",
+        "projectPath": "/home/drathijin/Proyectos/HALFONSO/halfonso/Recetas/BORRAME.csproj",
         "packagesPath": "/home/drathijin/.nuget/packages/",
-        "outputPath": "/home/drathijin/Proyectos/BORRAME/obj/",
+        "outputPath": "/home/drathijin/Proyectos/HALFONSO/halfonso/Recetas/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/share/dotnet/sdk/NuGetFallbackFolder"

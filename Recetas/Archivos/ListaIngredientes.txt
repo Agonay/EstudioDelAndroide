@@ -1,0 +1,32 @@
+Ingredientes:
+
+ Principales:
+	 -Harina - 1000 G
+	 -Agua - 560 ML
+	 -Aceite - 51 ML
+	 -Queso - 3 
+	 -Pimiento - 4 U
+	 -CarneMolida - 3500 G
+	 -TomateTriturado - 1000 ML
+	 -Huevo - 13 U
+	 -Papa - 166 G
+	 -Calamares - 1 
+	 -Complemento - 12 
+	 -BoteLenteja - 1 
+	 -Pan - 3 
+	 -PechugaPollo - 500 G
+
+ Opcionales:
+	 -Vino - 2 
+	 -Zanahoria - 6 
+
+ Especias:
+	 -Sal - 26 G
+	 -Levadura - 14 G
+	 -TomateFrito - 1 
+	 -Oregano - 6 
+	 -Vinagre - 1 
+	 -Laurel - 2 U
+	 -Pimienta - 9 
+	 -Cebolla - 12 U
+	 -Ajo - 15 U
